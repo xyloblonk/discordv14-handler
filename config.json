@@ -1,6 +1,6 @@
 {
-  "token": process.env.TOKEN,
+  "token": process.env.token,
   "clientId": process.env.clientId,
   "guildId": process.env.guildId,
-  "prefix": process.env.PREFIX
+  "prefix": process.env.prefix
 }
