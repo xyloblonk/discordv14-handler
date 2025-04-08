@@ -16,7 +16,6 @@ A clean and scalable bot structure for Discord.js v14 using **CommonJS** or **ES
 
 ## 🔧 Features
 
-- ⚡ Discord.js v14 support
 - ⚡ JavaScript & TypeScript support
 - 🧩 Slash commands (`/`)
 - 💬 Prefix commands (`!ping`)
