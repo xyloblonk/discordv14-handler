@@ -30,7 +30,7 @@ A clean and scalable bot structure for Discord.js v14 using **CommonJS** — sup
 ### 1. Clone the repo
 
 ```
-git clone https://github.com/your-username/discordjs-v14-handler.git
+git clone https://github.com/xyloblonk/discordjs-v14-handler.git
 cd discordjs-v14-handler
 npm install
 ```
@@ -65,7 +65,7 @@ or
 npm run
 ```
 
-## 🧠 Example Commands
+## 🧠 Example Commands - JavaScript
 Prefix command — ping
 ```
 module.exports = {
@@ -85,10 +85,13 @@ module.exports = {
     .setName('ping')
     .setDescription('Replies with Pong!'),
   async execute(interaction) {
-    await interaction.reply('Pong! (slash)');
+    await interaction.reply('Pong!');
   }
 };
 ```
+
+## 🧠 Example Commands - TypeScript
+The entirety of the TypeScript handler is still wip. Don't use it for prod!
 
 ## ⚙️ Handler Overview
 ### Event Handler
