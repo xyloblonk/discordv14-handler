@@ -1,3 +1,8 @@
+/*
+  MADE BY XYLOBLONK
+  https://github.com/xyloblonk/discordv14-handler
+*/
+
 module.exports = {
   name: 'ping',
   description: 'Replies with Pong!',
@@ -5,3 +10,8 @@ module.exports = {
     message.reply('Pong!');
   }
 };
+
+/*
+  MADE BY XYLOBLONK
+  https://github.com/xyloblonk/discordv14-handler
+*/
