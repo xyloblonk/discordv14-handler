@@ -1,0 +1,14 @@
+{
+  "name": "xylo-discord-v14-handler",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.11.0",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
+  }
+}
