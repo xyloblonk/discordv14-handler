@@ -48,7 +48,7 @@ const rest = new REST({ version: '10' }).setToken(token);
     console.log(`🔄 Refreshing ${commands.length} application (slash) commands for guild ${guildId}...`);
 
     const data = await rest.put(
-      Routes.applicationGuildCommands(clientId, guildId), // Routes.applicationCommands(clientId)
+      Routes.applicationGuildCommands(clientId, guildId),
       { body: commands }
     );
 
@@ -57,9 +57,6 @@ const rest = new REST({ version: '10' }).setToken(token);
     console.error('❌ Error registering slash commands:', error);
   }
 })();
-
-// Want global deploy instead? Replace the .put() call above with this:
-// Routes.applicationCommands(clientId)
 
 /*
   MADE BY XYLOBLONK
