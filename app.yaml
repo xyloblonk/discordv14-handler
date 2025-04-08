@@ -1,0 +1,11 @@
+runtime: nodejs16
+
+env_variables:
+  DISCORD_TOKEN: "your-bot-token"
+  CLIENT_ID: "your-client-id"
+  GUILD_ID: "your-guild-id"
+  PREFIX: "!"
+
+handlers:
+  - url: /.*  
+    script: auto
