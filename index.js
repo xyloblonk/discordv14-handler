@@ -1,13 +1,20 @@
 const { Client, Collection, GatewayIntentBits } = require('discord.js');
-const { token } = require('./config.json');
-const fs = require('fs');
-const path = require('path');
+const { token, prefix } = require('./config.json');
 
-const client = new Client({ intents: [GatewayIntentBits.Guilds] });
+const client = new Client({
+  intents: [
+    GatewayIntentBits.Guilds,
+    GatewayIntentBits.GuildMessages,
+    GatewayIntentBits.MessageContent
+  ]
+});
 
-client.commands = new Collection();
+client.slashCommands = new Collection();
+client.prefixCommands = new Collection();
+client.prefix = prefix;
 
 require('./handlers/eventHandler')(client);
-require('./handlers/commandHandler')(client);
+require('./handlers/slashCommandHandler')(client);
+require('./handlers/prefixCommandHandler')(client);
 
 client.login(token);
