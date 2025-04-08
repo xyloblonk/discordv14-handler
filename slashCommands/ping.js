@@ -1,3 +1,8 @@
+/*
+  MADE BY XYLOBLONK
+  https://github.com/xyloblonk/discordv14-handler
+*/
+
 const { SlashCommandBuilder } = require('discord.js');
 
 module.exports = {
