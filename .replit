@@ -1,0 +1,4 @@
+run = "npm start"
+language = "nodejs"
+install = "npm install"
+entrypoint = "index.js"
