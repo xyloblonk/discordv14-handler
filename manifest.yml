@@ -1,0 +1,10 @@
+applications:
+  - name: discord-bot
+    memory: 128M
+    instances: 1
+    random-route: true
+    env:
+      DISCORD_TOKEN: "your-bot-token"
+      CLIENT_ID: "your-client-id"
+      GUILD_ID: "your-guild-id"
+      PREFIX: "!"
