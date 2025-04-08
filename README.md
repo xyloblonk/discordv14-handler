@@ -15,14 +15,14 @@
 A clean and scalable bot structure for Discord.js v14 using **CommonJS** or **ESM**, supports **slash commands**, **prefix commands**, and **handlers**.
 
 ## 🔧 Features
-
-- ⚡ JavaScript & TypeScript support
-- 🧩 Slash commands (`/`)
-- 💬 Prefix commands (`!ping`)
-- 📁 Organized folder structure
-- 🔁 Dynamic loading for commands & events
-- ✅ Easy to scale and maintain
-- 🔐 Uses `config.json` and/or `.env` for setup
+- ⚡ **JavaScript & TypeScript support**
+- 🧩 **Slash commands** (`/`)
+- 💬 **Prefix commands** (`!ping`)
+- 📁 **Organized folder structure** for commands and events
+- 🔁 **Dynamic loading** for commands & events
+- ✅ **Easy to scale and maintain** as your bot grows
+- 🔐 Uses **config.json** and/or **.env** for setup
+- 📚 **Comprehensive documentation** for easy setup and usage
 
 ## 🚀 Getting Started
 
@@ -103,21 +103,21 @@ The entirety of the TypeScript handler is still wip. Don't use it for prod!
 - Loads message-based commands from /prefixCommands into the prefixCommands collection. 
 
 ## 🧪 Future Features
-- Button/SelectMenu interaction support 
-- Command cooldowns 
-- Role based permission guards 
-- Subcommand handling 
-- Command logging
+- **Button/SelectMenu interaction support**
+- **Command cooldowns** to limit command usage
+- **Role-based permission guards** to restrict command usage
+- **Subcommand handling** for more complex commands
+- **Command logging** for better tracking
 
-- ## 🧪 Features In Development
-- Typescript Support
-- MongoDB Integration
-- Custom API
-- Dashboard
+## 🧪 Features in Development
+- **TypeScript support** (in progress)
+- **MongoDB Integration** for data storage
+- **Custom API** for integrating external services
+- **Dashboard** for managing bot settings
 
 ## 🛠️ Requirements
 - Node.js v20 or higher
 - Discord.js v14+
-- MongoDB SRV Link (It's Free)
-- A server to run the bot on
-- An API Key from https://discord.xyloblonk.xyz
+- **MongoDB SRV Link** (Free, used for bot data storage and persistence)
+- A server to run the bot on (local or cloud)
+- **API Key** from [XyloBlonk API](https://discord.xyloblonk.xyz) (needed for certain advanced features)
