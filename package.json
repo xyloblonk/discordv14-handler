@@ -10,14 +10,15 @@
   "bugs": {
     "url": "https://github.com/xyloblonk/discordv14-handler/issues"
   },
-  "scripts": {
-    "start": "node index.js",
-    "run": "node index.js",
-    "build-guild": "node scripts/deploy-guild.js",
-    "build-global": "node scripts/deploy-global.js",
-    "test": "echo No test specified!",
-    "dev": "echo Dev not setup!"
-  },
+"scripts": {
+  "start": "node index.js",
+  "run": "node index.js",
+  "build-guild": "node scripts/deploy-guild.js",
+  "build-global": "node scripts/deploy-global.js",
+  "test": "echo No test specified!",
+  "dev": "echo Dev not setup!",
+  "lint": "eslint ."
+},
   "dependencies": {
     "discord.js": "^14.11.0",
     "fs": "^0.0.1-security",
