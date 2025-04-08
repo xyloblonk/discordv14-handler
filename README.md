@@ -9,3 +9,105 @@
 <a target="_blank" href="https://railway.app/new/template?template=https://github.com/xyloblonk/discordv14-handler"><img alt="Deploy on Railway" src="https://binbashbanana.github.io/deploy-buttons/buttons/remade/railway.svg"></a>
 <a target="_blank" href="https://render.com/deploy?repo=https://github.com/xyloblonk/discordv14-handler"><img alt="Deploy to Render" src="https://binbashbanana.github.io/deploy-buttons/buttons/remade/render.svg"></a>
   </br>
+
+# Discord.js v14 Command & Event Handler
+
+A clean and scalable bot structure for Discord.js v14 using **CommonJS** — supports **slash commands**, **prefix commands**, and **modular handlers**.
+
+## 🔧 Features
+
+- ⚡ Discord.js v14 support
+- 🧩 Slash commands (`/`)
+- 💬 Prefix commands (`!ping`)
+- 📁 Organized folder structure
+- 🔁 Dynamic loading for commands & events
+- ✅ Easy to scale and maintain
+- 🔐 Uses `config.json` for setup
+
+
+## 🚀 Getting Started
+
+### 1. Clone the repo
+
+```
+git clone https://github.com/your-username/discordjs-v14-handler.git
+cd discordjs-v14-handler
+npm install
+```
+
+### 2. Configure the bot
+Edit config.json with your bot info:
+
+```
+{
+  "token": "YOUR_BOT_TOKEN",
+  "prefix": "!",
+  "clientId": "YOUR_CLIENT_ID",
+  "guildId": "YOUR_GUILD_ID"
+}
+```
+
+3. Deploy slash commands
+Single Guild:
+```
+node build-guild
+```
+Global:
+```
+node build-global
+```
+4. Run the bot
+```
+npm start
+```
+or
+```
+npm run
+```
+
+## 🧠 Example Commands
+Prefix command — ping
+```
+module.exports = {
+  name: 'ping',
+  description: 'Replies with Pong!',
+  async execute(message, args, client) {
+    message.reply('Pong!');
+  }
+};
+```
+Slash command — ping
+```
+const { SlashCommandBuilder } = require('discord.js');
+
+module.exports = {
+  data: new SlashCommandBuilder()
+    .setName('ping')
+    .setDescription('Replies with Pong!'),
+  async execute(interaction) {
+    await interaction.reply('Pong! (slash)');
+  }
+};
+```
+
+## ⚙️ Handler Overview
+### Event Handler
+- Automatically loads all events from /events and registers them. 
+
+### Slash Command Handler
+- Loads all slash commands from /slashCommands into the client's slashCommands collection. 
+
+### Prefix Command Handler
+- Loads message-based commands from /prefixCommands into the prefixCommands collection. 
+
+## 🧪 Future Features
+- Button/SelectMenu interaction support 
+- Command cooldowns 
+- Role based permission guards 
+- Subcommand handling 
+- Command logging
+- Typescript Support 
+
+## 🛠️ Requirements
+- Node.js v20 or higher
+- Discord.js v14+
