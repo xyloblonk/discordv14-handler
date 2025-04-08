@@ -2,16 +2,29 @@
   "name": "xylo-discord-v14-handler",
   "version": "1.0.0",
   "main": "index.js",
-  "type": "module",
+  "author": "XyloBlonk",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xyloblonk/discordv14-handler"
+  },
+  "bugs": {
+    "url": "https://github.com/xyloblonk/discordv14-handler/issues"
+  },
   "scripts": {
     "start": "node index.js",
     "run": "node index.js",
     "build-guild": "node scripts/deploy-guild.js",
     "build-global": "node scripts/deploy-global.js",
+    "test": "echo No test specified!",
+    "dev": "echo Dev not setup!"
   },
   "dependencies": {
     "discord.js": "^14.11.0",
     "fs": "^0.0.1-security",
     "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "eslint": "^8.30.0"
   }
 }
