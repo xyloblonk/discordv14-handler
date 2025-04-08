@@ -1,3 +1,8 @@
+/*
+  MADE BY XYLOBLONK
+  https://github.com/xyloblonk/discordv14-handler
+*/
+
 module.exports = {
   name: 'ready',
   once: true,
@@ -5,3 +10,8 @@ module.exports = {
     console.log(`✅ Bot is online as ${client.user.tag}`);
   }
 };
+
+/*
+  MADE BY XYLOBLONK
+  https://github.com/xyloblonk/discordv14-handler
+*/
