@@ -1,4 +1,4 @@
-runtime: nodejs16
+runtime: nodejs20
 
 env_variables:
   DISCORD_TOKEN: "your-bot-token"
