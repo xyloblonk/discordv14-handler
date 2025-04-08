@@ -8,3 +8,8 @@ module.exports = {
     await interaction.reply('Pong!');
   }
 };
+
+/*
+  MADE BY XYLOBLONK
+  https://github.com/xyloblonk/discordv14-handler
+*/
