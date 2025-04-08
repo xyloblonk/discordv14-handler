@@ -121,4 +121,4 @@ The entirety of the TypeScript handler is still wip. Don't use it for prod!
 - Discord.js v14+
 - MongoDB SRV Link (It's Free)
 - A server to run the bot on
-- An API Key from discord.xyloblonk.xyz
+- An API Key from https://discord.xyloblonk.xyz
