@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "start": "node index.js",
-    "build": "node scripts/deploy.js",
+    "run": "node index.js",
+    "build-guild": "node scripts/deploy-guild.js",
+    "build-global": "node scripts/deploy-global.js",
   },
   "dependencies": {
     "discord.js": "^14.11.0",
