@@ -12,18 +12,18 @@
 
 # Discord.js v14 Command & Event Handler
 
-A clean and scalable bot structure for Discord.js v14 using **CommonJS** — supports **slash commands**, **prefix commands**, and **modular handlers**.
+A clean and scalable bot structure for Discord.js v14 using **CommonJS** or **ESM**, supports **slash commands**, **prefix commands**, and **handlers**.
 
 ## 🔧 Features
 
 - ⚡ Discord.js v14 support
+- ⚡ JavaScript & TypeScript support
 - 🧩 Slash commands (`/`)
 - 💬 Prefix commands (`!ping`)
 - 📁 Organized folder structure
 - 🔁 Dynamic loading for commands & events
 - ✅ Easy to scale and maintain
-- 🔐 Uses `config.json` for setup
-
+- 🔐 Uses `config.json` and/or `.env` for setup
 
 ## 🚀 Getting Started
 
@@ -109,8 +109,16 @@ The entirety of the TypeScript handler is still wip. Don't use it for prod!
 - Role based permission guards 
 - Subcommand handling 
 - Command logging
-- Typescript Support 
+
+- ## 🧪 Features In Development
+- Typescript Support
+- MongoDB Integration
+- Custom API
+- Dashboard
 
 ## 🛠️ Requirements
 - Node.js v20 or higher
 - Discord.js v14+
+- MongoDB SRV Link (It's Free)
+- A server to run the bot on
+- An API Key from discord.xyloblonk.xyz
