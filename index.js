@@ -4,7 +4,7 @@
 */
 
 // TABLE OF CONTENTS
-// 1 Imports
+// 1 Import required dependencies
 // 2 Setup the client
 // 3 Setup the client commands
 // 4 Import the handlers
@@ -15,7 +15,7 @@
   https://github.com/xyloblonk/discordv14-handler
 */
 
-// 1. Import needed dependencies
+// 1 Import required dependencies
 const { Client, Collection, GatewayIntentBits } = require('discord.js');
 const { token, prefix } = require('./config.json');
 
