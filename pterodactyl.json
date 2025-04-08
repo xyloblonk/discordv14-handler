@@ -1,0 +1,63 @@
+{
+  "name": "Discord.js Bot",
+  "description": "A bot built with Discord.js v14.",
+  "docker_images": [
+    "ghcr.io/pterodactyl/yarn:latest"
+  ],
+  "startup": "npm install && npm start",
+  "script": "sh",
+  "environment": {
+    "DISCORD_TOKEN": {
+      "default_value": "",
+      "required": true,
+      "description": "Your Discord bot token."
+    },
+    "CLIENT_ID": {
+      "default_value": "",
+      "required": true,
+      "description": "Your Discord bot client ID."
+    },
+    "GUILD_ID": {
+      "default_value": "",
+      "required": false,
+      "description": "The Discord guild ID (if needed for slash commands)."
+    },
+    "PREFIX": {
+      "default_value": "!",
+      "required": false,
+      "description": "The bot's prefix."
+    }
+  },
+  "install": {
+    "script": "npm install",
+    "container": "node:16-alpine",
+    "image": "node:16-alpine"
+  },
+  "start": {
+    "script": "npm start",
+    "container": "node:16-alpine",
+    "image": "node:16-alpine"
+  },
+  "stop": {
+    "script": "exit",
+    "container": "node:16-alpine",
+    "image": "node:16-alpine"
+  },
+  "panel": {
+    "container": "node:16-alpine",
+    "image": "node:16-alpine"
+  },
+  "version": "1.0.0",
+  "config": {
+    "files": [
+      {
+        "name": "config.json",
+        "type": "file",
+        "template": "config-template.json",
+        "required": true,
+        "description": "Config file for the bot (use a template)."
+      }
+    ],
+    "scripts": []
+  }
+}
